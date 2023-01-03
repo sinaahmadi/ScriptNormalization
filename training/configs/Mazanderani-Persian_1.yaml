@@ -1,0 +1,87 @@
+name: "Mazanderani-Persian_1"
+
+data:
+    train: "datasets/Mazanderani-Persian/1/train"
+    dev: "datasets/Mazanderani-Persian/1/dev"
+    test: "datasets/Mazanderani-Persian/1/test"
+    level: "char"
+    lowercase: False
+    normalize: False
+    max_sent_length: 50
+    dataset_type: "plain"
+
+    src:
+        lang: "src"
+        voc_limit: 100
+        voc_min_freq: 5
+        level: "char"
+    trg:
+        lang: "trg"
+        voc_limit: 100
+        voc_min_freq: 5
+        level: "char"
+    
+training:
+    random_seed: 42
+    optimizer: "adam"
+    learning_rate: 0.001
+    learning_rate_min: 0.0002
+    weight_decay: 0.0
+    clip_grad_norm: 1.0
+    batch_size: 64
+    scheduling: "plateau"
+    patience: 5
+    decrease_factor: 0.5
+    early_stopping_metric: "loss"
+    epochs: 20
+    validation_freq: 1000
+    logging_freq: 100
+    eval_metric: "bleu"
+    model_dir: "models/Mazanderani-Persian_1"
+    overwrite: True
+    shuffle: True
+    use_cuda: True
+    max_output_length: 50
+    print_valid_sents: [0, 3, 6, 9]
+    keep_best_ckpts: -1
+
+testing:
+    n_best: 1
+    beam_size: 4
+    beam_alpha: 1.0
+    eval_metrics: ["bleu", "chrf", "sequence_accuracy"]
+    max_output_length: 50
+    batch_size: 10
+    batch_type: "sentence"
+    return_prob: "none"
+
+model:
+    initializer: "xavier_uniform" 
+    init_gain: 1.0                
+    bias_initializer: "zeros"     
+    embed_initializer: "xavier_uniform" 
+    embed_init_gain: 1.0          
+    encoder:
+        type: "transformer"
+        num_layers: 6
+        num_heads: 8
+        embeddings:
+            embedding_dim: 128
+            scale: True
+        # typically ff_size = 4 x hidden_size
+        hidden_size: 128
+        ff_size: 512
+        dropout: 0.1
+        layer_norm: "pre"
+    decoder:
+        type: "transformer"
+        num_layers: 6
+        num_heads: 8
+        embeddings:
+            embedding_dim: 128
+            scale: True
+        # typically ff_size = 4 x hidden_size
+        hidden_size: 128
+        ff_size: 512
+        dropout: 0.1
+        layer_norm: "pre"

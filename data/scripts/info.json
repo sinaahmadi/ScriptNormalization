@@ -1,0 +1,13 @@
+{
+    "AzeriTurkish": {"diacritics": true, "zwnj": true},
+    "Kashmiri": {"diacritics": true, "zwnj": false},
+    "Gilaki": {"diacritics": true, "zwnj": true},
+    "Gorani": {"diacritics": false , "zwnj": false},
+    "Kurmanji": {"diacritics": false , "zwnj": false},
+    "Sorani": {"diacritics": false , "zwnj": false},
+    "Mazanderani": {"diacritics": true, "zwnj": true},
+    "Sindhi": {"diacritics": true, "zwnj": false},
+    "Persian": {"diacritics": true, "zwnj": true},
+    "Arabic": {"diacritics": true, "zwnj": false},
+    "Urdu": {"diacritics": true, "zwnj": true}
+}

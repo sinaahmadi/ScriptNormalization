@@ -1,0 +1,4 @@
+regex
+klpt
+pyarabic
+Levenshtein
