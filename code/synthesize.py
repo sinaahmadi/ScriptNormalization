@@ -1,4 +1,4 @@
-import json 
+import json
 import random
 import re
 import regex
@@ -119,7 +119,7 @@ if __name__ == '__main__':
             if len(i.split()) > 20:
                 i.split()
 
-        # create data instances of having a length of less than 40 tokens (space-delimited)
+        # create data instances having a length of less than 20 tokens (space-delimited)
         corpus_sent = list()
         for i in corpus:
             # clean i to remove non-Perso-Arabic text

@@ -37,5 +37,13 @@ data/corpus
 hidden/
 server
 evaluation
+data/language_identification/fastText-0.9.2
+*.bin
+*.vec
+code/config_generator_2.py
+code/config_template_2.yaml
+code/slurm_template_2.sh
+training/SLURMs_2/
+training/configs_2
 # End
 

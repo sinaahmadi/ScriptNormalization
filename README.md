@@ -33,9 +33,11 @@ The data presented in the [`corpus`](data/corpus) folder have been extracted fro
 Wordlists in the [`wordlist`](data/wordlist) folder contain words that are extracted from the corpora based on certain frequency. Depending on the size and quality of the data, the frequency is in the range of 3 to 10, i.e. words that appear with a frequency of 3 to 10 are extracted as the vocabulary of the language.
 
 To extract words from the corpora, run the following:
+
 	```
 	cat <file> |  tr -d '[:punct:]' | tr " " "\n" | sort | uniq -c | sort -n > <file_wordlist>
 	```
+
 Following this, common words in the source and target languages are identified and stored in the [`common`](data/common) folder. For the target languages, dictionaries are used. This folder contains two sets of common words, whether written with the same spelling or slightly different, and is organized in two sub-folders: 
 
  - [`corpus-based`](data/common/corpus-based) contains files of common words in two languages based on a corpus
