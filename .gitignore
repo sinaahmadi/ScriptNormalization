@@ -45,5 +45,13 @@ code/config_template_2.yaml
 code/slurm_template_2.sh
 training/SLURMs_2/
 training/configs_2
+
+data/real.zip
+data/language_identification.zip
+code/config_generator_2.py
+code/config_template_2.yaml
+code/slurm_template_2.sh
+
+
 # End
 

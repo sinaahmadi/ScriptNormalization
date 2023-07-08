@@ -20,6 +20,8 @@ fasttext_code_mapper = {
 	"azb": "azb"
 }
 
+# TO DO (24/01/2023): make sure that the collected sentences are clean!
+
 def create_clean():
 	# Create clean datasets
 	# for the clean data, the level of noise is not of importance (cause there is none!)

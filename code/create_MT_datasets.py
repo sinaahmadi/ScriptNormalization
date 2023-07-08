@@ -19,7 +19,7 @@ def clean_text(text, has_zwnj=False, has_diacritics=False):
             text = text.replace(i, "")
     return text.replace("‏", " ").replace("‎", " ").replace("ـ", "")
 
-if __name__ == '__main__':
+def create_datasets():
     with open("config.json", "r") as f:
         configs = json.load(f)
 
@@ -76,3 +76,20 @@ if __name__ == '__main__':
                 f.write("\n".join([m[0] for m in synth_dataset]))
             with open("../" + config["FLORES_dataset"] + "/%s_%s.trg"%("devtest", n), "w") as f:
                 f.write("\n".join([m[1] for m in synth_dataset]))
+
+if __name__ == '__main__':
+    # create_datasets()
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+

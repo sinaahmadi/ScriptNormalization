@@ -10,7 +10,7 @@
 		"common_words": "data/common/Kashmiri_Urdu_common.txt",
 		"script_map": "data/scripts/Kashmiri-Urdu.tsv",
 		"datasets": "data/datasets/Kashmiri-Urdu",
-		"FLORES": "data/machine_translation/kas_Arab.devtest",
+		"FLORES": "data/machine_translation/FLORES200/kas_Arab.devtest",
 		"FLORES_dataset": "data/machine_translation/Kashmiri-Urdu"
 	},
 	{
@@ -24,7 +24,7 @@
 		"common_words": "data/common/Sindhi_Urdu_common.txt",
 		"script_map": "data/scripts/Sindhi-Urdu.tsv",
 		"datasets": "data/datasets/Sindhi-Urdu",
-		"FLORES": "data/machine_translation/snd_Arab.devtest",
+		"FLORES": "data/machine_translation/FLORES200/snd_Arab.devtest",
 		"FLORES_dataset": "data/machine_translation/Sindhi-Urdu"
 	},
 	{
@@ -38,7 +38,7 @@
 		"common_words": "data/common/Sorani_Arabic_common.txt",
 		"script_map": "data/scripts/Kurdish-Arabic.tsv",
 		"datasets": "data/datasets/Sorani-Arabic",
-		"FLORES": "data/machine_translation/ckb_Arab.devtest",
+		"FLORES": "data/machine_translation/FLORES200/ckb_Arab.devtest",
 		"FLORES_dataset": "data/machine_translation/Sorani-Arabic"
 
 	},
@@ -77,7 +77,7 @@
 		"common_words": "data/common/Sorani_Persian_common.txt",
 		"script_map": "data/scripts/Kurdish-Persian.tsv",
 		"datasets": "data/datasets/Sorani-Persian",
-		"FLORES": "data/machine_translation/ckb_Arab.devtest",
+		"FLORES": "data/machine_translation/FLORES200/ckb_Arab.devtest",
 		"FLORES_dataset": "data/machine_translation/Sorani-Persian"
 	},
 	{

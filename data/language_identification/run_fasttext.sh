@@ -19,4 +19,5 @@ echo "Testing with lid.176..."
 ./fastText-0.9.2/fasttext test fastText-0.9.2/lid.176.bin $1/test.txt 4
 
 ./fastText-0.9.2/fasttext predict $1/model_langdetect.bin $1/test.txt 4 > $1/model_predict.txt
+./fastText-0.9.2/fasttext predict fastText-0.9.2/lid.176.bin $1/test.txt 4 > $1/predict_lid.176$2.txt
 echo "Prediction done."

@@ -40,13 +40,13 @@ if __name__ == '__main__':
 		configs = json.load(f)
 
 	for config in configs:
-		# # convert the tsv format of the script mapping to a dictionary
-		# with open("../" + config["script_map"], "r") as f:
-			# script_map = f.read().splitlines()[1:]
-			# script_map = synthesize.tsv_to_dict(script_map)
-			# print(config["source_language_code"], "\t", config["target_language_code"], "\t", round(calculate_ratio(script_map), 3))
+		# convert the tsv format of the script mapping to a dictionary
+		with open("../" + config["script_map"], "r") as f:
+			script_map = f.read().splitlines()[1:]
+			script_map = synthesize.tsv_to_dict(script_map)
+			print(config["source_language_code"], "\t", config["target_language_code"], "\t", round(calculate_ratio(script_map), 3))
 
-		print(config["source_language_code"] + "-" + config["target_language_code"], "\t", report_dataset("../" + config["datasets"]))
+		# print(config["source_language_code"] + "-" + config["target_language_code"], "\t", report_dataset("../" + config["datasets"]))
 
 
 

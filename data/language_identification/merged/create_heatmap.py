@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.pyplot import cm
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 plt.rcParams["font.family"] = "Times New Roman"
+plt.rcParams['text.color'] = "black"
 plt.rcParams.update({'font.size': 12})
 
 with open("prediction_reference_heatmap.tsv", "r") as f:
@@ -25,7 +26,10 @@ for i in file:
 
 for i in pairs_dict:
 	print(i, pairs_dict[i])
-x_axis, y_axis = sorted(pairs_dict.keys()), sorted(pairs_dict.keys())
+
+# x_axis = sorted(pairs_dict.keys()), sorted(pairs_dict.keys())
+x_axis = ['Azeri', 'Gilaki', 'Mazanderani', 'Arabic', 'Persian', 'Gorani', 'Sorani', 'Kurmanji','Kashmiri', 'Sindhi', 'Urdu'] 
+y_axis = ['Azeri', 'Gilaki', 'Mazanderani', 'Arabic', 'Persian', 'Gorani', 'Sorani', 'Kurmanji','Kashmiri', 'Sindhi', 'Urdu'] 
 
 values = list()
 print(x_axis)
@@ -40,13 +44,17 @@ for i in x_axis:
 
 print(values)
 harvest = np.array(values)
+harvest_2 = np.log(harvest)
 
 fig, ax = plt.subplots()
-im = ax.imshow(harvest, cmap=cm.rainbow)
+im = ax.imshow(harvest_2, cmap=cm.Greens) # rainbow
 
 divider = make_axes_locatable(ax)
-cax = divider.append_axes("right", size="5%", pad=0.05)
-plt.colorbar(im, cax=cax)
+# cax = divider.append_axes("right", size="5%", pad=0.05)
+# plt.colorbar(im, cax=cax)
+
+# plt.xlabel("Model predictions")
+# plt.ylabel("References")
 # Show all ticks and label them with the respective list entries
 ax.set_xticks(np.arange(len(y_axis)), labels=y_axis)
 ax.set_yticks(np.arange(len(x_axis)), labels=x_axis)
@@ -56,10 +64,13 @@ plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
 # Loop over data dimensions and create text annotations.
 for i in range(len(x_axis)):
     for j in range(len(y_axis)):
-        text = ax.text(j, i, harvest[i, j], ha="center", va="center", color="w")
+    	if i == j:
+    		text = ax.text(j, i, harvest[i, j], ha="center", va="center", color="w")	
+    	else:
+        	text = ax.text(j, i, harvest[i, j], ha="center", va="center")
 
 # ax.set_title("Harvest of local y_axis (in tons/year)")
 fig.tight_layout()
-fig.savefig("heatmap_merged.pdf")
+fig.savefig("heatmap_merged_clustered.pdf")
 plt.show()
 
