@@ -2,8 +2,9 @@
 
 <p align="center">
     <a href="">
-        <img alt="Perso-Arabic scripts that are targeted in this study." src="Perso-Arabic_scripts.jpg">
+        <img alt="Perso-Arabic scripts that are targeted in this study." src="Perso-Arabic_scripts.jpg"  width="500">
     </a>
+    <br>
     <a href="https://sinaahmadi.github.io/docs/articles/ahmadi2023acl.pdf">
         [📑 ALC 2023 Paper] 
     </a>
@@ -22,7 +23,7 @@
 </p>
 
 
-This repository contains the data and the models described in the ACL2023 paper ["Script Normalization for Unconventional Perso-Arabic Writing"](https://sinaahmadi.github.io/docs/articles/ahmadi2023acl.pdf). The models are deployed on HuggingFace at [https://huggingface.co/spaces/SinaAhmadi/ScriptNormalization](https://huggingface.co/spaces/SinaAhmadi/ScriptNormalization) 🔥 
+This repository contains the data and the models described in the ACL2023 paper ["Script Normalization for Unconventional Perso-Arabic Writing"](https://sinaahmadi.github.io/docs/articles/ahmadi2023acl.pdf). The models are deployed on HuggingFace: [Demo](https://huggingface.co/spaces/SinaAhmadi/ScriptNormalization) 🔥 
 
 ---
 
@@ -119,9 +120,15 @@ If you are interested in this project and want to extend it, here are the steps 
 
 You can use any NMT training platform of your choice for training your models. In the paper, we use [joeynmt](https://github.com/joeynmt/joeynmt) for which the configuration files are provided in the [`training`](training/configs) folder. If using [SLURM](https://slurm.schedmd.com/), you can also use the scripts in [`training/SLURMs`](training/SLURMs).
  
+## Related Projects
+Checkout the following related projects too:
+
+- [Language identification for Perso-Arabic Scripts](https://github.com/sinaahmadi/PersoArabicLID)
+- [Finite-state script normalization and processing utilities](https://github.com/google-research/nisaba)
+
 ## Cite this paper
 
-If you use any part of the data, please consider citing **[this paper]()** as follows:
+If you use any part of the data, please consider citing **[this paper](https://sinaahmadi.github.io/docs/articles/ahmadi2023acl.pdf)** as follows:
 
 	@inproceedings{ahmadi2023acl,
     title = "Script Normalization for Unconventional Writing of Under-Resourced Languages in Bilingual Communities",
