@@ -17,7 +17,7 @@
     <a href="https://drive.google.com/file/d/1UPl41uqcaNS5QM940FlaFrZjfoZzx-Eq/view?usp=sharing">
         [📀 Datasets] 
     </a>
-    <a href="https://huggingface.co/spaces/SinaAhmadi/ScriptNormalization](https://huggingface.co/spaces/SinaAhmadi/ScriptNormalization">
+    <a href="https://huggingface.co/spaces/SinaAhmadi/ScriptNormalization">
       [⚙️ Demo]
     </a>
 </p>
