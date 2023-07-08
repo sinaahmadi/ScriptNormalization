@@ -33,7 +33,9 @@ Temporary Items
 *.icloud
 
 data/datasets
-data/corpus
+#data/corpus
+data/corpus/ckb_Pewan_ckb_clean.txt
+data/corpus/ckb_Pewan_AS_ckb_clean_full.txt
 hidden/
 server
 evaluation
