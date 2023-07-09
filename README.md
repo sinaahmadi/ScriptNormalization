@@ -81,20 +81,20 @@ Following this, common words in the source and target languages are identified a
 If the source language has a dictionary, the common words are provided in the [`dictionary-based`](data/common/dictionary-based) folder. Otherwise, check the [`corpus-based`](data/common/corpus-based) folder. The merged vocabularies (based on corpus and dictionary) are provided in the [`common`](data/common) folder. If a dictionary is not available for the source language, the common files in [`common`](data/common) are the same as those at [`corpus-based`](data/common/corpus-based).
 
 ## Scripts
-Information about the target scripts can be found at [`data/script`](data/script) as follows:
+Information about the target scripts can be found at [`data/scripts`](data/scripts) as follows:
 
 | Language | Target Script | Mapping |
 |----------|---------------|---------|
-| Kashmiri  |      Urdu   |  [`data/script/Kashmiri-Urdu.tsv`](data/script/Kashmiri-Urdu.tsv) |
-| Sindhi    |      Urdu   |  [`data/script/Sindhi-Urdu.tsv`](data/script/Sindhi-Urdu.tsv) |
-| Mazanderani    |      Persian   |  [`data/script/Mazanderani-Persian.tsv`](data/script/Mazanderani-Persian.tsv) |
-| Gilaki    |      Persian   |  [`data/script/Gilaki-Persian.tsv`](data/script/Gilaki-Persian.tsv) |
-| AzeriTurkish    |      Persian   |  [`data/script/AzeriTurkish-Persian.tsv`](data/script/AzeriTurkish-Persian.tsv) |
-| Gorani    |      Kurdish   |  [`data/script/Gorani-Kurdish.tsv`](data/script/Gorani-Kurdish.tsv) |
-| Gorani    |      Arabic   |  [`data/script/Gorani-Arabic.tsv`](data/script/Gorani-Arabic.tsv) |
-| Gorani    |      Persian   |  [`data/script/Gorani-Persian.tsv`](data/script/Gorani-Persian.tsv) |
-| Kurdish    |      Arabic   |  [`data/script/Kurdish-Arabic.tsv`](data/script/Kurdish-Arabic.tsv) |
-| Kurdish    |      Persian   |  [`data/script/Kurdish-Persian.tsv`](data/script/Kurdish-Persian.tsv) |
+| Kashmiri  |      Urdu   |  [`data/scripts/Kashmiri-Urdu.tsv`](data/scripts/Kashmiri-Urdu.tsv) |
+| Sindhi    |      Urdu   |  [`data/scripts/Sindhi-Urdu.tsv`](data/scripts/Sindhi-Urdu.tsv) |
+| Mazanderani    |      Persian   |  [`data/scripts/Mazanderani-Persian.tsv`](data/scripts/Mazanderani-Persian.tsv) |
+| Gilaki    |      Persian   |  [`data/scripts/Gilaki-Persian.tsv`](data/scripts/Gilaki-Persian.tsv) |
+| AzeriTurkish    |      Persian   |  [`data/scripts/AzeriTurkish-Persian.tsv`](data/scripts/AzeriTurkish-Persian.tsv) |
+| Gorani    |      Kurdish   |  [`data/scripts/Gorani-Kurdish.tsv`](data/scripts/Gorani-Kurdish.tsv) |
+| Gorani    |      Arabic   |  [`data/scripts/Gorani-Arabic.tsv`](data/scripts/Gorani-Arabic.tsv) |
+| Gorani    |      Persian   |  [`data/scripts/Gorani-Persian.tsv`](data/scripts/Gorani-Persian.tsv) |
+| Kurdish    |      Arabic   |  [`data/scripts/Kurdish-Arabic.tsv`](data/scripts/Kurdish-Arabic.tsv) |
+| Kurdish    |      Persian   |  [`data/scripts/Kurdish-Persian.tsv`](data/scripts/Kurdish-Persian.tsv) |
 
 Also, find more meta-data about the usage of diacritics and zero-width non-joiner (ZWNJ) in each language at [`data/script/info.json`](data/script/info.json). A mapping of all the scripts is also provided at [`data/scripts/scripts_all.tsv`](data/scripts/scripts_all.tsv).
 
